@@ -1,1 +1,3 @@
 language: node_js
+notifications: 
+  webhooks: https://discordapp.com/api/webhooks/554720409577324544/NkGvhKnNZvuRQkwp6rLuPfAAOh3ASMuyY7IUc2f7WfheqUIqNYQ7ib8WT9V_rDFB_Oad
