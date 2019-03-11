@@ -1,3 +1,10 @@
 language: node_js
 notifications: 
-  webhooks: https://discordapp.com/api/webhooks/554720409577324544/NkGvhKnNZvuRQkwp6rLuPfAAOh3ASMuyY7IUc2f7WfheqUIqNYQ7ib8WT9V_rDFB_Oad
+  webhooks: 
+    urls:
+      - https://discordapp.com/api/webhooks/554720409577324544/NkGvhKnNZvuRQkwp6rLuPfAAOh3ASMuyY7IUc2f7WfheqUIqNYQ7ib8WT9V_rDFB_Oad
+  on_success: change # default: always
+  on_failure: always # default: always
+  on_start: change   # default: never
+  on_cancel: always # default: always
+  on_error: always # default: always
