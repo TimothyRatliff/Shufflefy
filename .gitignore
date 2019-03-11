@@ -81,3 +81,6 @@ typings/
 
 # .DS_Store
 .DS_Store
+
+# Client Secret
+secret.txt
