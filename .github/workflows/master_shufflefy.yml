@@ -5,12 +5,12 @@ name: Build and deploy ASP.Net Core app to Azure Web App - shufflefy
 
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    branches:
+      - master
+  workflow_dispatch:
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -18,7 +18,8 @@ jobs:
 
     - name: Set up .NET Core
       uses: actions/setup-dotnet@v1
-      dotnet-version: '5.0.x'
+      with:
+        dotnet-version: '5.0.x'
 
     - name: Build with dotnet
       run: dotnet build --configuration Release
@@ -28,7 +29,8 @@ jobs:
 
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
-      app-name: 'shufflefy'
-      slot-name: 'production'
-      publish-profile: ${{ secrets.AzureAppService_PublishProfile_ae6fc0db6caa48ecbf6d815f3b723a0f }}
-      package: ${{env.DOTNET_ROOT}}/myapp
+      with:
+        app-name: 'shufflefy'
+        slot-name: 'production'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_b26979bc87654709be4798c0a1b80399 }}
+        package: ${{env.DOTNET_ROOT}}/myapp 
