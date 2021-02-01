@@ -19,7 +19,7 @@ jobs:
     - name: Set up .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '5.0.x'
+        dotnet-version: '3.1.301'
 
     - name: Build with dotnet
       run: dotnet build --configuration Release
@@ -32,5 +32,5 @@ jobs:
       with:
         app-name: 'shufflefy'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_b26979bc87654709be4798c0a1b80399 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_09eb920942ce45a4897869ab3649298f }}
         package: ${{env.DOTNET_ROOT}}/myapp 
