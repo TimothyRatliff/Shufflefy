@@ -3,8 +3,7 @@
 
 name: Build and deploy ASP.Net Core app to Azure Web App - shufflefy
 
-on:
-push:
+on: push
 branches:
 - master
 workflow_dispatch:
