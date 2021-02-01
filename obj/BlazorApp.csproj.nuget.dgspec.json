@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/timothyratliff/source/shufflefy/BlazorApp/BlazorApp.csproj": {}
+    "/mnt/c/Users/timot/source/shufflefy/BlazorApp.csproj": {}
   },
   "projects": {
-    "/Users/timothyratliff/source/shufflefy/BlazorApp/BlazorApp.csproj": {
+    "/mnt/c/Users/timot/source/shufflefy/BlazorApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/timothyratliff/source/shufflefy/BlazorApp/BlazorApp.csproj",
+        "projectUniqueName": "/mnt/c/Users/timot/source/shufflefy/BlazorApp.csproj",
         "projectName": "BlazorApp",
-        "projectPath": "/Users/timothyratliff/source/shufflefy/BlazorApp/BlazorApp.csproj",
-        "packagesPath": "/Users/timothyratliff/.nuget/packages/",
-        "outputPath": "/Users/timothyratliff/source/shufflefy/BlazorApp/obj/",
+        "projectPath": "/mnt/c/Users/timot/source/shufflefy/BlazorApp.csproj",
+        "packagesPath": "/home/unrift/.nuget/packages/",
+        "outputPath": "/mnt/c/Users/timot/source/shufflefy/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/timothyratliff/.nuget/NuGet/NuGet.Config"
+          "/home/unrift/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.102/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.102/RuntimeIdentifierGraph.json"
         }
       }
     }

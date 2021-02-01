@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "N0d3qYakPFiZUolKxsEWRtu0GhMsRtMlULk06Arh5Ya3DLATecuuUokSMxjahmSHso8MhuZyOJV9+9eTMkblrw==",
+  "dgSpecHash": "uhP268zskTIUM1vsFYroCD0AmVHi5GSjXKjttHagZNv2WgnlLOJq4sUbhiZ5PMTtPHPoApX2N4EEn4F3RDDUCQ==",
   "success": true,
-  "projectFilePath": "/Users/timothyratliff/source/shufflefy/BlazorApp/BlazorApp.csproj",
+  "projectFilePath": "/mnt/c/Users/timot/source/shufflefy/BlazorApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
