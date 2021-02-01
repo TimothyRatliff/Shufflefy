@@ -17,20 +17,20 @@ steps:
 - uses: actions/checkout@master
 
 - name: Set up .NET Core
-uses: actions/setup-dotnet@v1
-with:
-dotnet-version: '5.0.x'
+  uses: actions/setup-dotnet@v1
+  with:
+  dotnet-version: '5.0.x'
 
 - name: Build with dotnet
-run: dotnet build --configuration Release
+  run: dotnet build --configuration Release
 
 - name: dotnet publish
-run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
+  run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
 - name: Deploy to Azure Web App
-uses: azure/webapps-deploy@v2
-with:
-app-name: 'shufflefy'
-slot-name: 'production'
-publish-profile: ${{ secrets.AzureAppService_PublishProfile_ae6fc0db6caa48ecbf6d815f3b723a0f }}
-package: ${{env.DOTNET_ROOT}}/myapp
+  uses: azure/webapps-deploy@v2
+  with:
+  app-name: 'shufflefy'
+  slot-name: 'production'
+  publish-profile: ${{ secrets.AzureAppService_PublishProfile_ae6fc0db6caa48ecbf6d815f3b723a0f }}
+  package: ${{env.DOTNET_ROOT}}/myapp
