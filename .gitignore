@@ -84,3 +84,7 @@ typings/
 
 # Client Secret
 secret.txt
+
+# Debug Files
+obj/Debug/*
+.vscode/*
